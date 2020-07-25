@@ -1,0 +1,72 @@
+.information-container {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 80px; 
+}
+
+.service-information {
+    max-width: 430px;
+    text-align: center;
+    margin: 0 16px 64px 16px;
+}
+
+.service-image {
+    filter: brightness(75%);
+    max-width: 430px !important;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+.visibility-wrapper:hover .visible {
+    opacity: 0;
+    visibility: hidden;
+}
+.visibility-wrapper:hover .invisible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.visibility-wrapper:hover .service-image {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.visibility-wrapper:hover .service-image-wrapper {
+    border: solid 4px rgb(255, 127, 187);
+}
+
+.visibility-wrapper .service-image {
+    transition: 200ms;
+}
+.service-image-wrapper { 
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+.service-image-wrapper img { 
+    border-radius: 100%;
+}
+
+.visibility-wrapper > * {
+    position: absolute;
+    transition: 200ms;
+}
+
+.service-image-container {
+    width: 430px;
+    height: 430px;
+    margin-bottom: 40px;
+}
+.service-image-container p {
+    margin: 0.25em 1em;
+    color: darkslategray;
+}
+.service-information h1, .service-information h2 {
+    color: white;
+    margin: 0.25em 1em;
+    /* text-shadow: 1px 1px 2px black; */
+}

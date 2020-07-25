@@ -1,0 +1,28 @@
+.greeting * {
+    color: white;
+    /* font-family: 'Playfair Display SC', serif; */
+}
+
+.greeting h1 {
+    font-size: 68px;
+    margin: 0;
+}
+
+.index-background {
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 65px 65px;
+}
+
+button.index {
+    background: #ffffff47;
+}
+
+button.index:hover {
+    background: #ffffff67;
+}
+
+.index-first-block {
+    height: 100vh;
+}

@@ -1,0 +1,27 @@
+.information-container {
+    flex-wrap: wrap;
+    margin-top: 80px; 
+}
+
+.service-information {
+    max-width: 330px;
+    text-align: center;
+    margin: 0 16px 64px 16px;
+
+}
+
+.service-image {
+    filter: brightness(75%);
+    max-width: 330px !important;
+}
+
+
+.service-image-container {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 40px;
+}
+
+.service-image-container h1, .service-image-container h2 {
+    color: white;
+}

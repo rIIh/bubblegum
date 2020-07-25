@@ -1,0 +1,45 @@
+main {
+    display: block;
+    height: auto;
+}
+
+.information-content {
+    min-height: 100vh;
+}
+
+.information-content-text {
+    max-width: 30%;
+    text-align: center;
+}
+
+.information-content-image {
+    width: 30%;
+}
+
+.information-photograph-images p {
+    color: #505050;
+    text-align: center;
+}
+
+.information-photograph {
+    height: 100vh;
+}
+
+.information-photograph-header {
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+
+.information-photograph-images {
+    width: 100%;
+}
+
+.information-photograph-info {
+    width: 25%;
+    min-width: 250px;
+}
+
+.information-photograph-img {
+    width: 100%;
+    object-fit: cover;
+}

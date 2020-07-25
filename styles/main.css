@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Waving;
+    src: url('../fonts/Waving.ttf');
+}
+
+@font-face {
+    font-family: PlayfairDisplaySC;
+    src: url('../fonts/PlayfairDisplaySC-Regular.ttf');
+}
+
+.brand {
+    font-family: Waving;
+    font-weight: bold;
+    font-size: 40px;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.circle-image {
+    max-width: 430px;
+    border-radius: 100%;
+}
+
+.scroll-pane .container {
+    /* 80px - высота шапки */
+    min-height: calc(100vh - 80px); 
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+/* v - vertical, h - horizontal */
+.fill-vh {
+    width: 100%;
+    height: 100%;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 8px;
+}
+
+.header-gap {
+    margin-top: 80px;
+}
+
+.header-content {
+    padding: 0 12px;
+    border-bottom: 1px inset rgb(240, 240, 240);
+}
+
+.divider {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider * {
+    width: 40%;
+    height: 0;
+    border-bottom: 1px black solid;
+}
+
+button {
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    height: 48px;
+    width: 196px;
+    border-radius: 24px;
+    transition: 100ms;
+}
+
+button:hover {
+    background-color: rgb(233, 178, 39);
+    transition: 100ms;
+}
+
+button:active {
+    background-color: rgb(255, 196, 46);
+    transition: 100ms;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: PlayfairDisplaySC !important;
+    font-weight: normal;
+}
+
+h3,
+h4,
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 0;
+    font-weight: normal;
+}
+
+form button {
+    color: black;
+    background: #e8e8e8;
+}
+
+form button:hover {
+    color: white;
+    background: grey;
+}
+
+form button:active {
+    color: black;
+    background: #e8e8e8;
+}
+
+input,
+textarea {
+    min-height: 48px;
+    width: 400px;
+    border: 1px lightgrey solid;
+    text-align: start;
+    /* font-size: 12px; */
+}
+
+input {
+    padding: 4px 12px;
+    margin: 4px;
+}
+
+textarea {
+    resize: none;
+    padding: 8px 12px;
+    margin: 4px;
+}
+
+.stack {
+    position: relative;
+}
+
+.stack > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stack .centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.centered * {
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    margin: 0;
+}
+
+a {
+    font-family: PlayfairDisplaySC;
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    padding: 2px;
+}
+
+a.link:hover, a.link.active {
+    border-bottom: 1px solid black
+}
+
+a.location {
+    padding: 0;
+    margin-right: 0;
+}
